@@ -44,17 +44,17 @@ static func transformFromGCJToWGS(_ p: CLLocationCoordinate2D) -> CLLocationCoor
 在您需要转换的地方使用
 ```ruby
 
-    //将WGS-84(国际标准)转为GCJ-02(火星坐标)
-    let WGSToGCJ = WSCoordinate.transformFromWGSToGCJ(32.0806670849, 118.9060163095)
+//将WGS-84(国际标准)转为GCJ-02(火星坐标)
+let WGSToGCJ = WSCoordinate.transformFromWGSToGCJ(32.0806670849, 118.9060163095)
     
-    // 将GCJ-02(火星坐标)转为百度坐标
-    let GCJToBaidu = WSCoordinate.transformFromGCJToBaidu(32.0806670849, 118.9060163095)
+// 将GCJ-02(火星坐标)转为百度坐标
+let GCJToBaidu = WSCoordinate.transformFromGCJToBaidu(32.0806670849, 118.9060163095)
 
-    //将百度坐标转为GCJ-02(火星坐标)
-    let baiduToGCJ = WSCoordinate.transformFromBaiduToGCJ(32.0806670849, 118.9060163095);
+//将百度坐标转为GCJ-02(火星坐标)
+let baiduToGCJ = WSCoordinate.transformFromBaiduToGCJ(32.0806670849, 118.9060163095)
 
-    //将GCJ-02(火星坐标)转为WGS-84
-    let GCJToWGS = WSCoordinate.transformFromGCJToWGS(coordinate)(32.0806670849, 118.9060163095);
+//将GCJ-02(火星坐标)转为WGS-84
+let GCJToWGS = WSCoordinate.transformFromGCJToWGS(coordinate)(32.0806670849, 118.9060163095)
 
 ```
 方法的返回值是一个CLLocationCoordinate2D结构体，格式为
